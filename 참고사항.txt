@@ -1,0 +1,2 @@
+책에 do_it_django_prj는 여기서 pj2
+책의 blog 는 여기서 single_pages이니 혼동 주의
