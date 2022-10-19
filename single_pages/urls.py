@@ -2,5 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # 여기 164p, 혹은 187p로 포스트 목록 페이지 만들기?필요할지
+    path('', views.PostList.as_view()),
+    # path('', views.index),
+    # path('<int:pk>/', views.single_post_page),
 ]
