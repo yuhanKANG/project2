@@ -7,3 +7,7 @@
 *이미지폴더 지정 생략 p.211
 * post_list 필요하면 226~270
 280~
+
+부트스트랩 5.2로
+196p확인
+https://themes.getbootstrap.com/

@@ -4,6 +4,7 @@ from .models import Post
 class Postlist(ListView):
     model = Post
     ordering = '-pk'
+    template_name = 'single_pages/index.html'
 
 class PostDetail(DetailView):
     model = Post
