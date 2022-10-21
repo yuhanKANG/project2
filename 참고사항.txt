@@ -31,3 +31,10 @@ iv) '14 상반기 매출액* 비교기간 매출 성장률 <0 : 감소고객
 홈페이지 관리자 로그인 구현
 홈페이지 네비바 (navbar.html은 생성했는데 페이지에 선 하나만 생기고 적용이 안됨)
 대상 : 기업관리자?
+
+
+pj2 구글 클라이언트
+id
+756938427860-o11da5v16soele7fmjldlvpu0br9v071.apps.googleusercontent.com
+pw
+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
