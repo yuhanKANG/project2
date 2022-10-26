@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-{% comment %} {% load static %} {% endcomment %}
+{% load static %}
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +23,10 @@
                     <label class="reg" for="id">Password</label>
                     <input type="text" id="name">
                 </li><br>
-
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-warning">로그인</button>
+                <button type="button" class="btn btn-success">회원가입</button>
+            </div>
                 <li>
                 <label class="reg" for="class">대분류목록</label>
                     <select id="class">
