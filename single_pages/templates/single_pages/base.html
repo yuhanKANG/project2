@@ -27,6 +27,7 @@
                 <button type="button" class="btn btn-warning">로그인</button>
                 <button type="button" class="btn btn-success">회원가입</button>
             </div>
+            
                 <li>
                 <label class="reg" for="class">대분류목록</label>
                     <select id="class">
@@ -185,6 +186,23 @@
           </fieldset>
         </form>
     
+    <div class="card my-4">
+        <h5 class="card-header">뭘로채울까요?</h5>
+        <div class="card-body">
+            {% if user.is_authenticated %}
+            <form id="comment-form" method="POST" action="{{ post.get_absolute_url }} new_comment/">
+                <div class="form-group">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">what's this?</button>
+            </form>
+            {% else %}
+                <a rold="button" class="btn btn-outline-dark btn-block btn-sm" href="#" data-toggle="modal" data-target="#loginModal"> 로그인?</a>
+            {% endif %}
+        </div>
+    </div>
+
+
     {% comment %} 드롭다운 부트스트랩 적용이안되네요.ㅠㅠ {% endcomment %}
 
     {% comment %} <div class="dropdown">

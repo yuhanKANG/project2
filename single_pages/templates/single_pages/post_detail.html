@@ -1,0 +1,23 @@
+{% extends 'single_pages/base.html' %}
+
+{% block main_area %}
+    
+
+    {% comment %} 여기는 다른거 작성하지 않고 {% endcomment %}
+    {% comment %} 딱 로그인 상태에 따라 댓글 입력란 또는 로그인 버튼 나타내는 코드만 작성했음  {% endcomment %}
+    {% comment %} 일단 base.html에 옮기긴했습니다만 {% endcomment %}
+    <div class="card my-4">
+        <h5 class="card-header">도레미파</h5>
+        <div class="card-body">
+            {% if user.is_authenticated %}
+            <form id="comment-form" method="POST" action="{{ post.get_absolute_url }} new_comment/">
+                <div class="form-group">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            {% else %}
+                <a rold="button" class="btn btn-outline-dark btn-block btn-sm" href="#" data-toggle="modal" data-target="#loginModal"> 로그인 후 글남기기</a>
+            {% endif %}
+        </div>
+    </div>

@@ -38,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    # 'crispy_forms'
+    
+    'crispy_forms',
     'markdownx',
+
+    
+
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -127,6 +131,11 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# 뭐가 안돌아가면 아래 코드가 유력범인
+# STATICFILES_DIRS = (   os.path.join(BASE_DIR, 'static'), ) :
+# base경로의 static folder의 외부파일 불러올 수 있도록 연결.
+STATICFILES_DIRS = (os.path.join(BASE_DIR),)
+
 STATIC_URL = '/static/'
 
 # Default primary key field type
@@ -148,4 +157,6 @@ SITE_ID = 1
 
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-LOGIN_REDIRECT_URL = '/single_pages/'
+LOGIN_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
